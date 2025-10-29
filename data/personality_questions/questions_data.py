@@ -1,0 +1,2 @@
+QUESTIONS = []
+QUESTION_MAP = {}

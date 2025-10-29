@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "question": "How do you feel about investing in volatile markets?",
+        "options": [
+            {"text": "Very anxious", "score": 0},
+            {"text": "Somewhat anxious", "score": 1},
+            {"text": "Neutral", "score": 2},
+            {"text": "Somewhat excited", "score": 3},
+            {"text": "Very excited", "score": 4}
+        ],
+        "trait": "risk"
+    },
+    {
+        "id": 2,
+        "question": "Do you usually plan your monthly spending?",
+        "options": [
+            {"text": "Never", "score": 0},
+            {"text": "Rarely", "score": 1},
+            {"text": "Sometimes", "score": 2},
+            {"text": "Often", "score": 3},
+            {"text": "Always", "score": 4}
+        ],
+        "trait": "planning"
+    },
+    {
+        "id": 3,
+        "question": "If you get a bonus, you’re more likely to...",
+        "options": [
+            {"text": "Spend it immediately", "score": 0},
+            {"text": "Spend most, save a bit", "score": 1},
+            {"text": "Split half-half", "score": 2},
+            {"text": "Save most, spend a bit", "score": 3},
+            {"text": "Save or invest it", "score": 4}
+        ],
+        "trait": "spending"
+    },
+    {
+        "id": 4,
+        "question": "How often do you check your financial accounts?",
+        "options": [
+            {"text": "Rarely", "score": 0},
+            {"text": "Once a month", "score": 1},
+            {"text": "Once a week", "score": 2},
+            {"text": "A few times a week", "score": 3},
+            {"text": "Daily", "score": 4}
+        ],
+        "trait": "awareness"
+    },
+    {
+        "id": 5,
+        "question": "When buying something big, do you compare options first?",
+        "options": [
+            {"text": "Never", "score": 0},
+            {"text": "Rarely", "score": 1},
+            {"text": "Sometimes", "score": 2},
+            {"text": "Often", "score": 3},
+            {"text": "Always", "score": 4}
+        ],
+        "trait": "awareness"
+    },
+    {
+        "id": 6,
+        "question": "You see a sudden market dip. Do you...",
+        "options": [
+            {"text": "Sell quickly", "score": 0},
+            {"text": "Wait and see", "score": 1},
+            {"text": "Do nothing", "score": 2},
+            {"text": "Buy cautiously", "score": 3},
+            {"text": "Buy more confidently", "score": 4}
+        ],
+        "trait": "risk"
+    },
+    {
+        "id": 7,
+        "question": "Your financial goal is...",
+        "options": [
+            {"text": "Enjoy life now", "score": 0},
+            {"text": "Balance fun and saving", "score": 1},
+            {"text": "Plan moderately", "score": 2},
+            {"text": "Focus on stability", "score": 3},
+            {"text": "Build for the future", "score": 4}
+        ],
+        "trait": "planning"
+    },
+    {
+        "id": 8,
+        "question": "How do you track your expenses?",
+        "options": [
+            {"text": "Not at all", "score": 0},
+            {"text": "Occasionally", "score": 1},
+            {"text": "Manually sometimes", "score": 2},
+            {"text": "Use simple apps", "score": 3},
+            {"text": "Use detailed tools/sheets", "score": 4}
+        ],
+        "trait": "awareness"
+    }
+]
