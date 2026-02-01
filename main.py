@@ -3,6 +3,8 @@ from fastapi import FastAPI
 from contextlib import asynccontextmanager
 import data.personality_questions.questions_data as qdata
 from routers.personality import router as PersonalityRouter
+from routers.auth import router as auth
+from fastapi.middleware.cors import CORSMiddleware
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -21,5 +23,20 @@ async def lifespan(app: FastAPI):
 
 # Create app with lifespan
 app = FastAPI(lifespan=lifespan)
-app.include_router(PersonalityRouter, prefix="/personality")
+app.include_router(PersonalityRouter)
+app.include_router(auth)
+
+origins = [
+    "http://localhost:3000",  # Next.js dev
+    "http://127.0.0.1:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,  # allows cookies, auth headers
+    allow_methods=["*"],      # allow all HTTP methods
+    allow_headers=["*"],      # allow all headers
+)
+
 
