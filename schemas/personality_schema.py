@@ -8,5 +8,11 @@ class PersonalityRequest(BaseModel):
 class PersonalityResponse(BaseModel):
     user_id: str
     personality_type: str
+    risk: str
+    planning: str
     description: str
     scores: Dict[str, float]
+
+class Personality(BaseModel):
+    user_id: str
+

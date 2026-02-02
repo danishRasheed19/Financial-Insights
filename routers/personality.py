@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from schemas.personality_schema import PersonalityRequest, PersonalityResponse
+from schemas.personality_schema import PersonalityRequest, PersonalityResponse,Personality
 from utils.scoring import classify_personality,get_traits
 from data.personality_questions.questions_data import QUESTIONS,QUESTION_MAP
 from data.personality_data.personality_types import PERSONALITY_TYPES
@@ -23,5 +23,18 @@ def submit_personality(request: PersonalityRequest):
         personality_type=personality_type["type"],
         description=personality_type["description"],
         scores=trait_scores
+    )
+    return response
+
+@router.post("/personalityType", response_model=PersonalityResponse)
+async def get_personality(request: Personality):
+    """Receives user_id, and returns a  personality type along with its traits"""
+    response = PersonalityResponse(
+        user_id=request.user_id,
+        personality_type="Saver",
+        risk="No-risk",
+        planning="Long term focused",
+        description= "Cautious and disciplined, prioritizes saving over spending.",
+        scores = {"risk": 0, "planning": 4, "spending": 0, "awareness": 3}
     )
     return response

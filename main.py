@@ -4,6 +4,7 @@ from contextlib import asynccontextmanager
 import data.personality_questions.questions_data as qdata
 from routers.personality import router as PersonalityRouter
 from routers.auth import router as auth
+from routers.stocks import router as stock
 from fastapi.middleware.cors import CORSMiddleware
 
 @asynccontextmanager
@@ -25,6 +26,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 app.include_router(PersonalityRouter)
 app.include_router(auth)
+app.include_router(stock)
 
 origins = [
     "http://localhost:3000",  # Next.js dev
