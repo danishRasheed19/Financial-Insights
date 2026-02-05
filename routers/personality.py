@@ -22,6 +22,8 @@ def submit_personality(request: PersonalityRequest):
         user_id=request.user_id,
         personality_type=personality_type["type"],
         description=personality_type["description"],
+        risk="risk",
+        planning="planning",
         scores=trait_scores
     )
     return response

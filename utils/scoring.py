@@ -40,7 +40,7 @@ def classify_personality(trait_scores,personality_types,core_traits):
                 "description": personality['description'],
                 "key_traits": personality['key_traits'],
             }
-
+    print("Best match:", best_match)
     return best_match
 
 
