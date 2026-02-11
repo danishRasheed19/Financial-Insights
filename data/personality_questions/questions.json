@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "question": "How do you feel about investing in volatile markets?",
         "options": [
             {"text": "Very anxious", "score": 0},
@@ -12,7 +12,7 @@
         "trait": "risk"
     },
     {
-        "id": 2,
+        "id": "2",
         "question": "Do you usually plan your monthly spending?",
         "options": [
             {"text": "Never", "score": 0},
@@ -24,7 +24,7 @@
         "trait": "planning"
     },
     {
-        "id": 3,
+        "id": "3",
         "question": "If you get a bonus, you’re more likely to...",
         "options": [
             {"text": "Spend it immediately", "score": 0},
@@ -36,7 +36,7 @@
         "trait": "spending"
     },
     {
-        "id": 4,
+        "id": "4",
         "question": "How often do you check your financial accounts?",
         "options": [
             {"text": "Rarely", "score": 0},
@@ -48,7 +48,7 @@
         "trait": "awareness"
     },
     {
-        "id": 5,
+        "id": "5",
         "question": "When buying something big, do you compare options first?",
         "options": [
             {"text": "Never", "score": 0},
@@ -60,7 +60,7 @@
         "trait": "awareness"
     },
     {
-        "id": 6,
+        "id": "6",
         "question": "You see a sudden market dip. Do you...",
         "options": [
             {"text": "Sell quickly", "score": 0},
@@ -72,7 +72,7 @@
         "trait": "risk"
     },
     {
-        "id": 7,
+        "id": "7",
         "question": "Your financial goal is...",
         "options": [
             {"text": "Enjoy life now", "score": 0},
@@ -84,7 +84,7 @@
         "trait": "planning"
     },
     {
-        "id": 8,
+        "id": "8",
         "question": "How do you track your expenses?",
         "options": [
             {"text": "Not at all", "score": 0},
